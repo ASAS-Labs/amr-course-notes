@@ -16,15 +16,4 @@ Problem sets, derivations, and worked solutions for the course.
 - Code submissions should be in Jupyter notebook format (.ipynb)
 - Follow the specific instructions provided for each assignment
 
----
 
-To add a new assignment, create a Markdown file in the `assignments/` directory with the following front matter:
-
-```yaml
----
-layout: default
-title: Assignment Title
-parent: Assignments
-nav_order: 1
----
-```
