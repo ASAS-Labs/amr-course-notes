@@ -26,6 +26,15 @@ This site contains organized materials for the Autonomous Mobile Robots course, 
 - **Projects**: Implementation examples, code samples, and reports
 - **Appendix**: Reference materials and mathematical supplements
 
+
+## Taught by
+
+Dr.Aliasghar Arab
+
+- **Email**:aliasghar.arab@nyu.edu
+course assistant: Vivek Mattam
+- **Email**:vm2677@nyu.edu
+
 ## Quick Links
 
 - [View all notes](/amr-notes/notes/)
