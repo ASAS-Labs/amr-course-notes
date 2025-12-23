@@ -12,27 +12,25 @@ Course lecture slides for Autonomous Mobile Robots.
 
 ## Available Lectures
 
-| Lecture | Topic | Download |
-|---------|-------|----------|
-| Lecture 1 | Introduction | [PowerPoint]({{ site.baseurl }}/slides/AMR%20_Lecture%20_1.pptx) |
-| Lecture 2 | [Topic] | [PowerPoint]({{ site.baseurl }}/slides/%20AMR_Lecture_2.pptx) |
-| Lecture 3 | [Topic] | [PowerPoint]({{ site.baseurl }}/slides/AMR_Lecture_3.pptx) |
-| Lecture 4 | [Topic] | [PowerPoint]({{ site.baseurl }}/slides/AMR_Lecture_4%20_.pptx) |
-| Lecture 5 | [Topic] | [PowerPoint]({{ site.baseurl }}/slides/AMR_Lecture_5.pptx) |
-| Lecture 6 | [Topic] | [PDF]({{ site.baseurl }}/slides/AMR_Lecture_6.pdf) |
-| Lecture 7 | [Topic] | [PDF]({{ site.baseurl }}/slides/AMR_Lecture_7.pdf) |
-| Lecture 8 | [Topic] | [PDF]({{ site.baseurl }}/slides/AMR%20-%20Lecture_8.pdf) |
-| Lecture 9 | [Topic] | [PDF]({{ site.baseurl }}/slides/AMR_Lecture_9.pdf) |
-| Examples | Practice Problems | [PDF]({{ site.baseurl }}/slides/EXAMPLES.pdf) |
+| Lecture | Format | Link |
+|---------|--------|------|
+| Lecture 1 | Google Slides | [View Slides](https://docs.google.com/presentation/d/1_PCK173-5XBfSuWkFjHK11cIjD5_xtXbXBXZDQmi2Y4/edit?usp=drive_link) |
+| Lecture 2 | Google Slides | [View Slides](https://docs.google.com/presentation/d/1NMWc1V2Qctzb6paN7esHMiXA2CcrhYWME5T-BtjgDuo/edit?usp=drive_link) |
+| Lecture 3 | Google Slides | [View Slides](https://docs.google.com/presentation/d/1mvdP7Dv9RZRr8ZG9wSL4h9LFLS-Ls79Ai2YYMBFucZk/edit?usp=drive_link) |
+| Lecture 4 | Google Slides | [View Slides](https://docs.google.com/presentation/d/18i2rkAIUm81_QH6gPNFczdOLo76nc5n4P1r-FuIrafE/edit?usp=drive_link) |
+| Lecture 5 | Google Slides | [View Slides](https://docs.google.com/presentation/d/1j5n9Y_NP-ytJsgGWAEoAiHH6pxIoP_ssTOdUDgtTulI/edit?usp=drive_link) |
+| Lecture 6 | PDF | [View PDF](https://drive.google.com/file/d/1IunTk2OgFqEe3DpPIut-Q2mZ6o5hWjgm/view?usp=drive_link) |
+| Lecture 7 | PDF | [View PDF](https://drive.google.com/file/d/14gJZit8pro84g6bhgDJ2ryNN9aqXq72m/view?usp=drive_link) |
+| Lecture 8 | PDF | [View PDF](https://drive.google.com/file/d/1OB91nBh-6ohOZ2lZGnvlmy4GegHlE1al/view?usp=drive_link) |
+| Lecture 9 | PDF | [View PDF](https://drive.google.com/file/d/14Rn0ZiBCSMPZUvc7IaWeEKE83h3j_4hw/view?usp=drive_link) |
+| Examples | PDF | [View PDF](https://drive.google.com/file/d/1hKp-jc3QsYU7z9j5oOnc3FrGk9BgD329/view?usp=drive_link) |
 
 ---
 
 ## How to Use
 
-1. Click on the download link for the lecture you want to view
-2. The slides will download to your computer
-3. Open with PowerPoint (for .pptx files) or any PDF viewer (for .pdf files)
+1. Click on the "View Slides" or "View PDF" link for the lecture you want to view
+2. The slides will open directly in Google Drive (no download needed)
+3. For Google Slides, you can view in presentation mode
+4. For PDFs, you can view or download from Google Drive
 
-## Note
-
-You can add lecture topics by editing this file and replacing `[Topic]` with the actual lecture topics.
