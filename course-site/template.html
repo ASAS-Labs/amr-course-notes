@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAGE TITLE – Course Notes</title>
+  <!-- Adjust path based on folder depth: use ../css for one level deep, ../../css for two levels -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html" class="site-title">Autonomous Mobile Robots</a>
+      <nav>
+        <!-- Update 'active' class and paths based on section -->
+        <a href="../notes/index.html">Notes</a>
+        <a href="../hws/index.html">Homework</a>
+        <a href="../projects/index.html">Projects</a>
+        <a href="../appendix/index.html">Appendix</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Section</a> / Page Title</p>
+
+      <h1>Page Title</h1>
+      <p>Brief description or introduction.</p>
+
+      <hr>
+
+      <h2>Section Heading</h2>
+      <p>Your content here. Inline math: $x^2 + y^2 = r^2$</p>
+
+      <p>Display math:</p>
+      $$\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$$
+
+      <h2>Code Example</h2>
+      <pre><code>def example():
+    return "hello"</code></pre>
+
+      <h2>Lists</h2>
+      <ul>
+        <li>First item</li>
+        <li>Second item</li>
+      </ul>
+
+      <h2>Tables</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data</td>
+            <td>Data</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span class="muted">Last updated: December 2024</span>
+    </div>
+  </footer>
+
+  <!-- Adjust paths based on folder depth -->
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "\\(", right: "\\)", display: false }
+        ]
+      });
+    });
+  </script>
+</body>
+
+</html>

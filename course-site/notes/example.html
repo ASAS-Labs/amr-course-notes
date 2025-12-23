@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyapunov Stability – Notes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html" class="site-title">Autonomous Mobile Robots</a>
+      <nav>
+        <a href="index.html" class="active">Notes</a>
+        <a href="../hws/index.html">Homework</a>
+        <a href="../projects/index.html">Projects</a>
+        <a href="../appendix/index.html">Appendix</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Notes</a> / Lyapunov Stability</p>
+      
+      <h1>Lyapunov Stability</h1>
+      <p>Stability analysis for nonlinear systems using Lyapunov's direct method.</p>
+
+      <hr>
+
+      <h2>Problem Setup</h2>
+      <p>Consider an autonomous dynamical system:</p>
+      $$\dot{x} = f(x)$$
+      <p>where $x \in \mathbb{R}^n$ and $f: \mathbb{R}^n \to \mathbb{R}^n$ is locally Lipschitz. We assume $f(0) = 0$, so the origin is an equilibrium point.</p>
+
+      <h2>Lyapunov Function</h2>
+      <p>A continuously differentiable function $V: D \to \mathbb{R}$ is a <strong>Lyapunov function candidate</strong> if:</p>
+      <ol>
+        <li>$V(0) = 0$</li>
+        <li>$V(x) > 0$ for all $x \in D \setminus \{0\}$ (positive definite)</li>
+      </ol>
+      
+      <p>The time derivative along system trajectories is:</p>
+      $$\dot{V}(x) = \frac{\partial V}{\partial x} f(x) = \nabla V(x)^\top f(x)$$
+
+      <h2>Stability Theorem</h2>
+      <p>If there exists a Lyapunov function $V(x)$ such that:</p>
+      <ul>
+        <li>$\dot{V}(x) \leq 0$ for all $x \in D$ → origin is <strong>stable</strong></li>
+        <li>$\dot{V}(x) < 0$ for all $x \in D \setminus \{0\}$ → origin is <strong>asymptotically stable</strong></li>
+      </ul>
+
+      <h2>Example</h2>
+      <p>Consider the system:</p>
+      $$\dot{x}_1 = x_2$$
+      $$\dot{x}_2 = -x_1 - x_2$$
+      
+      <p>Choose the candidate $V(x) = \frac{1}{2}(x_1^2 + x_2^2)$. Then:</p>
+      $$\dot{V} = x_1 \dot{x}_1 + x_2 \dot{x}_2 = x_1 x_2 + x_2(-x_1 - x_2) = -x_2^2 \leq 0$$
+      
+      <p>Since $\dot{V} \leq 0$, the origin is stable. However, $\dot{V} = 0$ when $x_2 = 0$, so we cannot conclude asymptotic stability directly. LaSalle's invariance principle can be applied here.</p>
+
+      <h2>Implementation</h2>
+      <pre><code>import numpy as np
+from scipy.integrate import odeint
+
+def system(x, t):
+    x1, x2 = x
+    dx1 = x2
+    dx2 = -x1 - x2
+    return [dx1, dx2]
+
+def lyapunov(x):
+    return 0.5 * (x[0]**2 + x[1]**2)
+
+# Simulate
+t = np.linspace(0, 10, 1000)
+x0 = [2.0, 1.0]
+sol = odeint(system, x0, t)
+
+# Verify V decreases
+V = [lyapunov(x) for x in sol]</code></pre>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Lyapunov's method proves stability without solving the ODE</li>
+        <li>Finding a good candidate is the hard part—there's no general method</li>
+        <li>Quadratic forms $V(x) = x^\top P x$ work well for linear and some nonlinear systems</li>
+      </ul>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span class="muted">Last updated: December 2024</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false},
+          {left: "\\[", right: "\\]", display: true},
+          {left: "\\(", right: "\\)", display: false}
+        ]
+      });
+    });
+  </script>
+</body>
+</html>
