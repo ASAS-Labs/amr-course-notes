@@ -29,9 +29,10 @@ This site contains organized materials for the Autonomous Mobile Robots course, 
 
 ## Taught by
 
-Dr.Aliasghar Arab
+Dr. Aliasghar Arab
 
-- **Email**:aliasghar.arab@nyu.edu
+
+- **Email**: aliasghar.arab@nyu.edu
 - **Course Assistant**: Vivek Mattam, vm2677@nyu.edu
 
 ## Quick Links
