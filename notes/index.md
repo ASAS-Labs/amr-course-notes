@@ -23,6 +23,7 @@ Course lecture slides for Autonomous Mobile Robots.
 | Lecture 7 | Model Predictive Control & Safety-Critical Control | [View PDF](https://drive.google.com/file/d/1dsiAghaylNwJjMhOpD6ywnQSeMnlTEaF/view?usp=drive_link) |
 | Lecture 8 | Motion Planning Algorithms | [View PDF](https://drive.google.com/file/d/1fc93pufalvjRsOo9TNzHWNkm1Xrl6O0d/view?usp=drive_link) |
 | Lecture 9 | Planning Methods Review | [View PDF](https://drive.google.com/file/d/17DzlVn7I1PQihSaBrm3K-QM5frJ6l39Z/view?usp=drive_link) |
+| Lecture 10 | Verification & Validation (V&V) | [View PDF]({{ site.baseurl }}/assets/Lecture_10_VV.pdf) |
 | Examples | Practice Problems | [View PDF](https://drive.google.com/file/d/1hKp-jc3QsYU7z9j5oOnc3FrGk9BgD329/view?usp=drive_link) |
 
 ---
