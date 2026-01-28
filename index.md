@@ -17,6 +17,8 @@ Course notes, assignments, and projects for Introduction to Autonomous Mobile Ro
 
 ---
 
+![ASAS Labs AV AMR]({{ site.baseurl }}/assets/ASAS_LABS_AV_AMR.jpg)
+
 ## Course Overview
 
 This site contains organized materials for the Autonomous Mobile Robots course, including:
@@ -29,10 +31,12 @@ This site contains organized materials for the Autonomous Mobile Robots course, 
 
 ## Taught by
 
-Dr. Aliasghar Arab
+### Dr. Aliasghar Arab
 
+Dr. Aliasghar Arab holds a Bachelor in Robotics Engineering and has been focused on designing and implementing control methods and motion planning algorithms for safety and robustness enhancement of AMR and AVs in the past two decades.
 
 - **Email**: aliasghar.arab@nyu.edu
+- **Google Scholar**: [View Profile](https://scholar.google.com/citations?user=spAwBfQAAAAJ&hl=en)
 - **Course Assistant**: Vivek Mattam, vm2677@nyu.edu
 
 ## Quick Links
