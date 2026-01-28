@@ -41,6 +41,7 @@ Dr. Aliasghar Arab holds a Bachelor in Robotics Engineering and has been focused
 
 ## Quick Links
 
+- [Course Syllabus]({{ site.baseurl }}/syllabus/)
 - [View all notes](/amr-notes/notes/)
 - [Browse assignments](/amr-notes/assignments/)
 - [Explore projects](/amr-notes/projects/)
