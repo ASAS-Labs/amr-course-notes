@@ -94,6 +94,28 @@
     .main-content ol {
         overflow: hidden;
     }
+
+    /* Hide "This site uses Just the Docs" text */
+    .site-footer p:last-child {
+        display: none !important;
+    }
+    
+    /* Hide footer text containing "Just the Docs" */
+    .site-footer p:contains("Just the Docs"),
+    .site-footer p:contains("documentation theme"),
+    .site-footer p:contains("Jekyll") {
+        display: none !important;
+    }
+    
+    /* JavaScript-based solution to hide footer text */
+    .site-footer p {
+        display: none;
+    }
+    
+    /* Show only the copyright footer content */
+    .site-footer p:first-child {
+        display: block;
+    }
 </style>
 
 <script>
@@ -162,6 +184,15 @@
                     }
                 }
             });
+        });
+
+        // Hide "This site uses Just the Docs" footer text
+        const footerParagraphs = document.querySelectorAll('.site-footer p, footer p');
+        footerParagraphs.forEach(p => {
+            const text = p.textContent || p.innerText;
+            if (text.includes('Just the Docs') || text.includes('documentation theme') || text.includes('Jekyll')) {
+                p.style.display = 'none';
+            }
         });
     });
 </script>
