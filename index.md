@@ -13,7 +13,7 @@ Course notes, assignments, and projects for Introduction to Autonomous Mobile Ro
 {: .fs-6 .fw-300 }
 
 [Get started with Notes]({{ site.baseurl }}/notes/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View on GitHub](https://github.com/vivekmattam02/amr-notes){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View on GitHub](https://github.com/ASAS-Labs/amr-course-notes){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 

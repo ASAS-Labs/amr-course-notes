@@ -1,1 +1,1 @@
-https://vivekmattam02.github.io/amr-notes/
+https://asas-labs.github.io/amr-course-notes/
