@@ -19,11 +19,11 @@ Course notes, assignments, and projects for Introduction to Autonomous Mobile Ro
 
 ![ASAS Labs AV AMR]({{ site.baseurl }}/assets/ASAS_LABS_AV_AMR.jpg)
 
-![AMR Course Image]({{ site.baseurl }}/assets/AMR_Course_Image.jpeg)
-
 ## Course Overview
 
 This site contains organized materials for the Autonomous Mobile Robots course, including:
+
+![AMR Course Image]({{ site.baseurl }}/assets/AMR_Course_Image.jpeg)
 
 - **Notes**: Lecture notes and theoretical foundations
 - **Assignments**: Problem sets, derivations, and worked solutions

@@ -12,3 +12,156 @@
     };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+<style>
+    /* Image wrapping and scroll interactivity styles */
+    .main-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 1.5rem 0;
+    }
+
+    /* Float images to the right on larger screens */
+    @media (min-width: 768px) {
+        .main-content img {
+            float: right;
+            max-width: 45%;
+            margin: 1rem 0 1rem 2rem;
+            clear: right;
+        }
+        
+        /* First image can float left */
+        .main-content img:first-of-type {
+            float: left;
+            margin: 1rem 2rem 1rem 0;
+            clear: left;
+        }
+        
+        /* Alternate floating for multiple images */
+        .main-content img:nth-of-type(even) {
+            float: right;
+            margin: 1rem 0 1rem 2rem;
+            clear: right;
+        }
+        
+        .main-content img:nth-of-type(odd):not(:first-of-type) {
+            float: left;
+            margin: 1rem 2rem 1rem 0;
+            clear: left;
+        }
+    }
+
+    /* Scroll-based interactivity */
+    .main-content img.scroll-interactive {
+        position: relative;
+        transition: transform 0.1s ease-out, opacity 0.3s ease;
+    }
+
+    /* Sticky positioning for images when scrolling */
+    @media (min-width: 768px) {
+        .main-content img.sticky-image {
+            position: sticky;
+            top: 100px;
+            z-index: 10;
+        }
+    }
+
+    /* Parallax effect on scroll */
+    .main-content img.parallax-image {
+        will-change: transform;
+    }
+
+    /* Hover effects */
+    .main-content img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+
+    /* Clear floats */
+    .main-content::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Ensure text wraps properly */
+    .main-content p,
+    .main-content ul,
+    .main-content ol {
+        overflow: hidden;
+    }
+</style>
+
+<script>
+    // Add scroll interactivity to images
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('.main-content img');
+        
+        // Add classes for styling
+        images.forEach((img, index) => {
+            img.classList.add('scroll-interactive');
+            
+            // Add sticky class to images on larger screens
+            if (window.innerWidth >= 768) {
+                if (index % 2 === 0) {
+                    img.classList.add('sticky-image');
+                } else {
+                    img.classList.add('parallax-image');
+                }
+            }
+        });
+
+        // Scroll event listener for parallax effect
+        let ticking = false;
+        
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const parallaxImages = document.querySelectorAll('.main-content img.parallax-image');
+            
+            parallaxImages.forEach((img) => {
+                const rect = img.getBoundingClientRect();
+                const elementTop = rect.top + scrolled;
+                const elementHeight = rect.height;
+                const windowHeight = window.innerHeight;
+                
+                // Only apply parallax when image is in viewport
+                if (rect.top < windowHeight && rect.bottom > 0) {
+                    const scrolledPast = scrolled - (elementTop - windowHeight);
+                    const parallaxSpeed = 0.3;
+                    const yPos = scrolledPast * parallaxSpeed;
+                    
+                    img.style.transform = `translateY(${yPos}px)`;
+                }
+            });
+            
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                window.requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestTick);
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            images.forEach((img, index) => {
+                img.classList.remove('sticky-image', 'parallax-image');
+                if (window.innerWidth >= 768) {
+                    if (index % 2 === 0) {
+                        img.classList.add('sticky-image');
+                    } else {
+                        img.classList.add('parallax-image');
+                    }
+                }
+            });
+        });
+    });
+</script>
