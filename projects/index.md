@@ -8,25 +8,25 @@ permalink: /projects/
 
 # Projects
 
-Implementation examples, code samples, and project reports.
-
-## Project Structure
-
-Each project should include:
-- Overview and objectives
-- Implementation details
-- Results and analysis
-- Code repository links
+{: .warning }
+> **Page Under Development**  
+> This section is currently being developed. Project details will be available soon.
 
 ---
 
-To add a new project, create a Markdown file in the `projects/` directory with the following front matter:
+## About Course Projects
 
-```yaml
+The projects in this course are **industry-oriented** and **hands-on**, designed to provide practical experience with real-world applications of autonomous mobile robots. Students will work on projects that involve:
+
+- Real-world problem solving
+- Industry-standard tools and methodologies
+- Hands-on implementation and testing
+- Integration of theoretical concepts with practical applications
+
+Project details, requirements, and submission guidelines will be posted here once finalized.
+
 ---
-layout: default
-title: Project Title
-parent: Projects
-nav_order: 1
----
-```
+
+## Coming Soon
+
+Project information will be added to this page as it becomes available. Please check back for updates.
