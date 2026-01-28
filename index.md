@@ -12,7 +12,7 @@ permalink: /
 Course notes, assignments, and projects for Introduction to Autonomous Mobile Robots.
 {: .fs-6 .fw-300 }
 
-[Get started with Notes](/amr-notes/notes/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Get started with Notes]({{ site.baseurl }}/notes/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View on GitHub](https://github.com/vivekmattam02/amr-notes){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
@@ -42,7 +42,7 @@ Dr. Aliasghar Arab holds a Bachelor in Robotics Engineering and has been focused
 ## Quick Links
 
 - [Course Syllabus]({{ site.baseurl }}/syllabus/)
-- [View all notes](/amr-notes/notes/)
-- [Browse assignments](/amr-notes/assignments/)
-- [Explore projects](/amr-notes/projects/)
-- [Reference appendix](/amr-notes/appendix/)
+- [View all notes]({{ site.baseurl }}/notes/)
+- [Browse assignments]({{ site.baseurl }}/assignments/)
+- [Explore projects]({{ site.baseurl }}/projects/)
+- [Reference appendix]({{ site.baseurl }}/appendix/)
